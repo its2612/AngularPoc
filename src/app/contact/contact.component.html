@@ -1,0 +1,60 @@
+
+<div class="" style="margin: 5%">
+<h2 style="text-align: center;color: blueviolet">Contact <i class="fas fa-address-book"></i> </h2>
+<hr>
+
+
+
+<div class="row" >
+        <div class="col-md-3" >
+        
+        </div>
+
+        <div class="col-md-6" >
+          <form class="container" [formGroup]="contactform" (ngSubmit)="onSubmit()">
+  
+            <label>Full Name:</label>
+            <br>
+              
+              <input style="width:100%" type="text" formControlName="name">
+              <br>
+          
+            <label>Email:  </label>
+            <br>
+              
+              <input style="width:100%" type="text" formControlName="email">
+              <br>
+
+            <label>Mobile:</label>
+            <br>
+              <input style="width:100%" type="text" formControlName="mobile">
+            
+          <br>
+            <label>Message:</label>
+            <br>
+              <input style="width:100%" type="text" formControlName="message">
+            
+            <br>
+              <br>
+            <button type="submit" style="background-color: blue" [disabled]="!contactform.valid">Submit</button>
+          </form>
+
+
+            </div>
+            <div class="col-md-3" >
+        
+                </div>
+        
+       
+        
+         </div>
+
+
+
+
+
+
+
+
+
+      </div>
